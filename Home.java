@@ -1,5 +1,8 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, GitHub!");
-    }
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MainMenu {
+    private static ArrayList<String> usernames = new ArrayList<>();
+    private static ArrayList<String> passwords = new ArrayList<>();
+
 }
