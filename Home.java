@@ -13,6 +13,23 @@ public class MainMenu {
             System.out.println("2. Login");
             System.out.println("3. Exit");
             System.out.print("Please choose an option: ");
+            
+            int choice = scanner.nextInt();
+            scanner.nextLine();  // Consume newline
+            
+            switch (choice) {
+                case 1:
+                    register(scanner);
+                    break;
+                case 2:
+                    login(scanner);
+                    break;
+                case 3:
+                    System.out.println("Exiting the system. Goodbye!");
+                    return;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
         }
     }
 
