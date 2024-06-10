@@ -27,4 +27,25 @@ public class MainMenu {
         
         System.out.println("Registration successful!");
     }
+     private static void login(Scanner scanner) {
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+        
+        boolean loggedIn = false;
+        for (int i = 0; i < usernames.size(); i++) {
+            if (usernames.get(i).equals(username) && passwords.get(i).equals(password)) {
+                loggedIn = true;
+                break;
+            }
+        }
+        
+        if (loggedIn) {
+            System.out.println("Login successful!");
+        } else {
+            System.out.println("Invalid username or password. Please try again.");
+        }
+    }
+
 }
