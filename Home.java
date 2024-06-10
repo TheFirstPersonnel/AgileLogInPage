@@ -15,4 +15,16 @@ public class MainMenu {
             System.out.print("Please choose an option: ");
         }
     }
+
+    private static void register(Scanner scanner) {
+        System.out.print("Enter a username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter a password: ");
+        String password = scanner.nextLine();
+        
+        usernames.add(username);
+        passwords.add(password);
+        
+        System.out.println("Registration successful!");
+    }
 }
