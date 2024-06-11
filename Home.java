@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainMenu {
-    private static ArrayList<String> usernames = new ArrayList<>();
-    private static ArrayList<String> passwords = new ArrayList<>();
+    private static ArrayList<String> UserNames = new ArrayList<>();
+    private static ArrayList<String> Passwords = new ArrayList<>();
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
