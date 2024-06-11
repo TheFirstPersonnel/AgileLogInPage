@@ -8,7 +8,7 @@ public class MainMenu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("Welcome to the User Authentication System");
+            System.out.println("Welcome to the Updated User Authentication System"); // Updated message
             System.out.println("1. Register");
             System.out.println("2. Login");
             System.out.println("3. Exit");
@@ -38,13 +38,21 @@ public class MainMenu {
         String username = scanner.nextLine();
         System.out.print("Enter a password: ");
         String password = scanner.nextLine();
+        System.out.print("Re-enter your password: ");
+        String confirmPassword = scanner.nextLine();
+        
+        if (!password.equals(confirmPassword)) {
+            System.out.println("Passwords do not match. Registration failed.");
+            return;
+        }
         
         usernames.add(username);
         passwords.add(password);
         
         System.out.println("Registration successful!");
     }
-     private static void login(Scanner scanner) {
+
+    private static void login(Scanner scanner) {
         System.out.print("Enter your username: ");
         String username = scanner.nextLine();
         System.out.print("Enter your password: ");
